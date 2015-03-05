@@ -1,0 +1,10 @@
+<% @announcements.each do |announcement|%>
+  <div class="well">
+    <blockquote>
+      <%= announcement['announcement'] %>
+    </blockquote>
+    <p>
+      - <%= announcement['posted_by'] %>
+    </p>
+  </div>
+<% end %>
